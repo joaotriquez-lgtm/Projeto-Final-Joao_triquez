@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0b0f19;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* NAVBAR */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(11, 15, 25, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span,
+footer span {
+    color: #6c63ff;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.menu a {
+    color: #b8bdc9;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #6c63ff;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 100vh;
+
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 140px 25px 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.inicio-texto {
+    max-width: 650px;
+}
+
+.pequeno {
+    color: #6c63ff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.inicio h2 {
+    font-size: 70px;
+    line-height: 1.1;
+}
+
+.inicio h3 {
+    font-size: 28px;
+    color: #b8bdc9;
+    margin: 15px 0;
+}
+
+.inicio-texto > p:not(.pequeno) {
+    color: #9097a8;
+    line-height: 1.8;
+    max-width: 580px;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.botao,
+.botao-outline {
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.botao {
+    background: #6c63ff;
+}
+
+.botao:hover {
+    background: #554de0;
+    transform: translateY(-3px);
+}
+
+.botao-outline {
+    border: 1px solid #303746;
+    color: #ffffff;
+}
+
+.botao-outline:hover {
+    border-color: #6c63ff;
+    color: #6c63ff;
+}
+
+
+/* CÍRCULO */
+
+.inicio-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #6c63ff,
+        #9b94ff
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 80px rgba(108, 99, 255, 0.3);
+}
+
+.circulo span {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+
+/* SEÇÕES */
+
+.secao {
+    max-width: 1200px;
+    margin: auto;
+    padding: 110px 25px;
+}
+
+.titulo {
+    margin-bottom: 50px;
+}
+
+.titulo p {
+    color: #6c63ff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.titulo h2 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+
+/* SOBRE */
+
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.sobre-card {
+    background: #111724;
+    border: 1px solid #202838;
+
+    padding: 35px;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.sobre-card:hover {
+    transform: translateY(-5px);
+    border-color: #6c63ff;
+}
+
+.sobre-card span {
+    color: #6c63ff;
+    font-weight: 600;
+}
+
+.sobre-card h3 {
+    margin: 15px 0;
+    font-size: 23px;
+}
+
+.sobre-card p {
+    color: #9299aa;
+    line-height: 1.8;
+}
+
+
+/* HABILIDADES */
+
+.habilidades {
+    background: #0e1420;
+    max-width: none;
+    padding-left: calc((100% - 1150px) / 2);
+    padding-right: calc((100% - 1150px) / 2);
+}
+
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.habilidade {
+    background: #111724;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #202838;
+
+    transition: 0.3s;
+}
+
+.habilidade:hover {
+    transform: translateY(-6px);
+    border-color: #6c63ff;
+}
+
+.habilidade h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.habilidade p {
+    color: #9299aa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* PROJETOS */
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.projeto {
+    background: #111724;
+    border: 1px solid #202838;
+
+    border-radius: 12px;
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-8px);
+    border-color: #6c63ff;
+}
+
+.projeto-numero {
+    color: #6c63ff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.projeto h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.projeto p {
+    color: #9299aa;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.tags span {
+    background: #1a2130;
+    color: #aaa5ff;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    font-size: 12px;
+}
+
+.projeto a {
+    color: #6c63ff;
+    font-size: 14px;
+}
+
+
+/* CONTATO */
+
+.contato {
+    text-align: center;
+    padding: 120px 25px;
+    background: #0e1420;
+}
+
+.contato .titulo {
+    margin-bottom: 20px;
+}
+
+.contato > p {
+    color: #9299aa;
+    margin-bottom: 30px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #080b12;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #707787;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio h2 {
+        font-size: 55px;
+    }
+
+    .habilidades-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .menu {
+        display: none;
+    }
+
+    .inicio h2 {
+        font-size: 45px;
+    }
+
+    .inicio h3 {
+        font-size: 22px;
+    }
+
+    .circulo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .circulo span {
+        font-size: 60px;
+    }
+
+    .sobre-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo h2 {
+        font-size: 32px;
+    }
+
+}
